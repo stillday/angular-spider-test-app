@@ -1,16 +1,14 @@
-import { BrowserModule } from "@angular/platform-browser";
-import { NgModule } from "@angular/core";
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+import { ChartsModule } from 'ng2-charts';
 
-import { AppRoutingModule } from "./app-routing.module";
-import { AppComponent } from "./app.component";
-// chart imports
-import { ChartsModule } from "ng2-charts";
-import { RadarChartComponent } from "./radar/radar";
+import { AppComponent } from './app.component';
+import { HelloComponent } from './hello.component';
 
 @NgModule({
-  declarations: [AppComponent],
-  imports: [BrowserModule, AppRoutingModule],
-  providers: [],
+  imports: [BrowserModule, FormsModule, ChartsModule],
+  declarations: [AppComponent, HelloComponent],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }

@@ -1,12 +1,27 @@
 <div class="radar-wrapper">
   <div class="radar-headline">
     <h3 class="h3">Radar Test</h3>
-    
   </div>
+
   <canvas baseChart 
-    [datasets]="radarChartData" 
-    [options]="radarChartOptions" 
-    [labels]="radarChartLabels" 
-    [chartType]="radarChartType">
-    </canvas>
+  [datasets]="radarChartData" 
+  [options]="radarChartOptions" 
+  [labels]="radarChartLabels" 
+  [chartType]="radarChartType">
+  </canvas>
+
+  <div class="radar-dropdown">
+    <div class="form-group">
+      <label for="firstvalue">
+        first value
+      </label>
+      <select id="firstvalue" name="firstvalue" [(ngModel)]="firstvalue" class="form-control">
+        <option value="1">10</option>
+        <option value="2">20</option>
+        <option value="opel">Opel</option>
+        <option value="audi">Audi</option>
+      </select>
+
+    </div>
+  </div>
 </div>

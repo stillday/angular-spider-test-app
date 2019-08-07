@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ChartDataSets, ChartType, RadialChartOptions } from 'chart.js';
 import { Label } from 'ng2-charts';
 
+
 @Component({
   selector: 'my-app',
   templateUrl: './app.component.html',

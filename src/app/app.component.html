@@ -10,16 +10,16 @@
   [chartType]="radarChartType">
   </canvas>
 
+{{firstvalue}}
   <div class="radar-dropdown">
     <div class="form-group">
       <label for="firstvalue">
         first value
       </label>
       <select id="firstvalue" name="firstvalue" [(ngModel)]="firstvalue" class="form-control">
-        <option value="1">10</option>
-        <option value="2">20</option>
-        <option value="opel">Opel</option>
-        <option value="audi">Audi</option>
+       <option *ngFor="let ddrop of dropdowns" [value]="ddrop.id">
+        {{ddrop.value}}
+       </option>
       </select>
 
     </div>

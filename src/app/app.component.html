@@ -9,19 +9,5 @@
   [labels]="radarChartLabels" 
   [chartType]="radarChartType">
   </canvas>
-
-{{firstvalue}}
-  <div class="radar-dropdown">
-    <div class="form-group">
-      <label for="firstvalue">
-        first value
-      </label>
-      <select id="firstvalue" name="firstvalue" [(ngModel)]="firstvalue" class="form-control">
-       <option *ngFor="let ddrop of dropdowns" [value]="ddrop.id">
-        {{ddrop.value}}
-       </option>
-      </select>
-
-    </div>
-  </div>
+ <my-dropdown></my-dropdown>
 </div>

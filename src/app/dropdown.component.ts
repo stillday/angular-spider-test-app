@@ -1,10 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, Validators } from "@angular/forms";
 import { Dropdown } from './models/dropdown.model';
 
 @Component({
-  selector: 'my-app',
-  templateUrl: './app.component.html',
+  selector: 'my-dropdown',
+  templateUrl: './dropdown.component.html',
   styleUrls: ['./app.component.scss']
 })
 
@@ -15,9 +14,4 @@ export class AppDropdown {
     { id: 3, value: '30' },
     { id: 4, value: '40' },
   ];
-  constructor() { }
-  ngOnInit() {
-
-  }
-
 }

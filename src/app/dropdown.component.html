@@ -1,0 +1,14 @@
+
+<div class="radar-dropdown">
+  <div class="form-group">
+    <label for="firstvalue">
+      first value 
+    </label>
+    <select id="firstvalue" name="firstvalue" [(ngModel)]="AppDropdown" class="form-control">
+      <option *ngFor="let ddrop of dropdowns" [value]="ddrop.id">
+        {{ddrop.value}}
+      </option>
+    </select>
+  </div>
+ {{AppDropdown.value}}
+</div>

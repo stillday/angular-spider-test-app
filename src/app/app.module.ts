@@ -6,11 +6,13 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
-import { AppDropdown } from './app.dropdown';
+import { AppDropdown } from './dropdown.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule, ChartsModule, ReactiveFormsModule],
-  declarations: [AppComponent, HelloComponent, AppDropdown],
+  declarations: [AppComponent, 
+    HelloComponent, 
+    AppDropdown],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
